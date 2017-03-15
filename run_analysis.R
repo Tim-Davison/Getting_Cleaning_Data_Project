@@ -1,7 +1,6 @@
 ## Merge the training and test to create one data set.
 
 setwd("~/DSC")
-if(!file.exists("./data")) {dir.create("./data")}
 x_train <- read.table("UCI HAR Dataset/train/X_train.txt")
 x_test <- read.table("UCI HAR Dataset/test/X_test.txt")
 
@@ -39,21 +38,20 @@ x_test3 <- cbind(test_subjects, x_test2)
   mean_names <- grep("mean", names(merged_test_train), value = TRUE); 
   Mean_names <- grep("Mean", names(merged_test_train), value = TRUE); 
   sd_names <- grep("std", names(merged_test_train), value = TRUE); 
-  activities_names <- grep("activities", names(merged_test_train), value = TRUE); 
-  ssubjects_names <- grep("std", names(merged_test_train), value = TRUE); 
+
   all_names <- c("subjects", "activities", mean_names, Mean_names, sd_names)
-  
   merged_sd_mean <- merged_test_train[all_names]
   
-## Uses descriptive activity names to name the activities in the data set
+## Use descriptive activity names to name the activities in the data set
 
-  merged_activities <- merged_sd_mean %>% arrange(activities) %>%
+  merged_activities <- merged_sd_mean %>% 
+          arrange(activities) %>%
           mutate(activities = as.character(factor(activities, levels=1:6,
                  labels= c("walking", "walking upstairs", "walking downstairs", "sitting", "standing", "laying"))))
   
 ## Appropriately label the data set with descriptive variable names.
 
-   names(merged_activities) <- tolower(names(merged_activities))
+  names(merged_activities) <- tolower(names(merged_activities))
   names(merged_activities) <- gsub("-", ".", names(merged_activities))
   names(merged_activities) <- gsub("\\()", "", names(merged_activities))
   names(merged_activities) <- gsub("tbodyacc", "body.acceleration.time", names(merged_activities))
