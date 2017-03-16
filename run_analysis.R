@@ -1,6 +1,5 @@
 ## Merge the training and test to create one data set.
 
-setwd("~/DSC")
 library(dplyr)
 x_train <- read.table("UCI HAR Dataset/train/X_train.txt")
 x_test <- read.table("UCI HAR Dataset/test/X_test.txt")
@@ -81,7 +80,9 @@ x_test3 <- cbind(test_subjects, x_test2)
   
   summary_data <- group_by(merged_activities, subjects, activities)
   summary_data %>% summarise_all(mean)
-            
-
+     
+  ## The following line was written to create the text file for
+  ## submission. It has been disabled.
+  ## write.table(summary_data, file= "cleaning_data.txt", row.names = FALSE)
   
   
