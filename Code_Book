@@ -1,6 +1,12 @@
-#Code Book for Getting and Cleaning Data Project
+##Code Book for Getting and Cleaning Data Project
 
-## Variables
+#Variables
+
+There are 88 total variables. The first two, "subjects" and "activities" are grouped and summarized. 
+"Subjects" identifies the 30 participants in the study with an integer from 1 to 30.
+"Activities" are what activities were measured for the study: walking, walking upstairs, walking downstairs, sitting, standing and laying.
+
+The remaining 86 variables are descriptive and detail what it is they measure. For instance, "body.acceleration.time.mean.x" measures the mean of the body's acceleration time across the X axis.
 
  [1] "subjects"                                            
  [2] "activities"                                          
@@ -92,14 +98,12 @@
 [88] "body.gyroscope.jerk.magnitude.std"   
 
 
-Summaries
+#Summaries
 The data is summarized in groups of subjects and activities.
 
-Subjects
-There were 30 subjects for this study identified with integers from 1 to 30.
+Subjects - There were 30 subjects for this study identified with integers from 1 to 30.
 
-Activities
-All 30 subjects were monitored doing the following six activities:
+Activities - All 30 subjects were monitored doing the following six activities:
 
 Walking
 Walking Upstairs
@@ -107,6 +111,8 @@ Walking downstairs
 Sitting
 Standing
 Laying
+
+The mean of the remaining 86 variables is calculated for each subject doing each activity.
 
 Units
 
