@@ -1,12 +1,13 @@
-##Code Book for Getting and Cleaning Data Project
+Code Book for Getting and Cleaning Data Project
 
-#Variables
+Variables
 
 There are 88 total variables. The first two, "subjects" and "activities" are grouped and summarized. 
 "Subjects" identifies the 30 participants in the study with an integer from 1 to 30.
 "Activities" are what activities were measured for the study: walking, walking upstairs, walking downstairs, sitting, standing and laying.
 
-The remaining 86 variables are descriptive and detail what it is they measure. For instance, "body.acceleration.time.mean.x" measures the mean of the body's acceleration time across the X axis.
+The remaining 86 variables are descriptive and detail what it is they measure. 
+For instance, "body.acceleration.time.mean.x" measures the mean of the body's acceleration time across the X axis.
 
  [1] "subjects"                                            
  [2] "activities"                                          
@@ -114,12 +115,6 @@ Laying
 
 The mean of the remaining 86 variables is calculated for each subject doing each activity.
 
-Units
-
-Time, frequency and magnitude measurements were made.
-Time was measured in
-Frequency was measured in
-Magnitude was measured in
 
 End
 
