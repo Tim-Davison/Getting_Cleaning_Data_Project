@@ -1,6 +1,7 @@
 ## Merge the training and test to create one data set.
 
 setwd("~/DSC")
+library(dplyr)
 x_train <- read.table("UCI HAR Dataset/train/X_train.txt")
 x_test <- read.table("UCI HAR Dataset/test/X_test.txt")
 
