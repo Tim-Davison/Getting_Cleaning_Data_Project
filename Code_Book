@@ -1,11 +1,120 @@
-Code Book for Getting and Cleaning Data Project
+#Code Book for Getting and Cleaning Data Project
 
-Variables
+## Variables
 
+ [1] "subjects"                                            
+ [2] "activities"                                          
+ [3] "body.acceleration.time.mean.x"                       
+ [4] "body.acceleration.time.mean.y"                       
+ [5] "body.acceleration.time.mean.z"                       
+ [6] "gravity.acceleration.time.mean.x"                    
+ [7] "gravity.acceleration.time.mean.y"                    
+ [8] "gravity.acceleration.time.mean.z"                    
+ [9] "body.acceleration.time.jerk.mean.x"                  
+[10] "body.acceleration.time.jerk.mean.y"                  
+[11] "body.acceleration.time.jerk.mean.z"                  
+[12] "body.gyroscope.time.mean.x"                          
+[13] "body.gyroscope.time.mean.y"                          
+[14] "body.gyroscope.time.mean.z"                          
+[15] "body.gyroscope.time.jerk.mean.x"                     
+[16] "body.gyroscope.time.jerk.mean.y"                     
+[17] "body.gyroscope.time.jerk.mean.z"                     
+[18] "body.acceleration.time.magnitude.mean"               
+[19] "gravity.acceleration.time.magnitude.mean"            
+[20] "body.acceleration.time.jerk.magnitude.mean"          
+[21] "body.gyroscope.time.magnitude.mean"                  
+[22] "body.gyroscope.time.jerk.magnitude.mean"             
+[23] "body.acceleration.frequency.mean.x"                  
+[24] "body.acceleration.frequency.mean.y"                  
+[25] "body.acceleration.frequency.mean.z"                  
+[26] "body.acceleration.frequency.mean.frequency.x"        
+[27] "body.acceleration.frequency.mean.frequency.y"        
+[28] "body.acceleration.frequency.mean.frequency.z"        
+[29] "body.acceleration.frequency.jerk.mean.x"             
+[30] "body.acceleration.frequency.jerk.mean.y"             
+[31] "body.acceleration.frequency.jerk.mean.z"             
+[32] "body.acceleration.frequency.jerk.mean.frequency.x"   
+[33] "body.acceleration.frequency.jerk.mean.frequency.y"   
+[34] "body.acceleration.frequency.jerk.mean.frequency.z"   
+[35] "body.gyroscope.frequency.mean.x"                     
+[36] "body.gyroscope.frequency.mean.y"                     
+[37] "body.gyroscope.frequency.mean.z"                     
+[38] "body.gyroscope.frequency.mean.frequency.x"           
+[39] "body.gyroscope.frequency.mean.frequency.y"           
+[40] "body.gyroscope.frequency.mean.frequency.z"           
+[41] "body.acceleration.frequency.magnitude.mean"          
+[42] "body.acceleration.frequency.magnitude.mean.frequency"
+[43] "body.acceleration.jerk.magnitude.mean"               
+[44] "body.acceleration.jerk.magnitude.mean.frequency"     
+[45] "body.gyroscope.magnitude.mean"                       
+[46] "body.gyroscope.magnitude.mean.frequency"             
+[47] "body.gyroscope.jerk.magnitude.mean"                  
+[48] "body.gyroscope.jerk.magnitude.mean.frequency"        
+[49] "angle.body.acceleration.time.mean.gravity"           
+[50] "angle.body.acceleration.time.jerk.mean.gravity.mean" 
+[51] "angle.body.gyroscope.time.mean.gravity.mean"         
+[52] "angle.body.gyroscope.time.jerk.mean.gravity.mean"    
+[53] "angle.x.gravity.mean"                                
+[54] "angle.y.gravity.mean"                                
+[55] "angle.z.gravity.mean"                                
+[56] "body.acceleration.time.std.x"                        
+[57] "body.acceleration.time.std.y"                        
+[58] "body.acceleration.time.std.z"                        
+[59] "gravity.acceleration.time.std.x"                     
+[60] "gravity.acceleration.time.std.y"                     
+[61] "gravity.acceleration.time.std.z"                     
+[62] "body.acceleration.time.jerk.std.x"                   
+[63] "body.acceleration.time.jerk.std.y"                   
+[64] "body.acceleration.time.jerk.std.z"                   
+[65] "body.gyroscope.time.std.x"                           
+[66] "body.gyroscope.time.std.y"                           
+[67] "body.gyroscope.time.std.z"                           
+[68] "body.gyroscope.time.jerk.std.x"                      
+[69] "body.gyroscope.time.jerk.std.y"                      
+[70] "body.gyroscope.time.jerk.std.z"                      
+[71] "body.acceleration.time.magnitude.std"                
+[72] "gravity.acceleration.time.magnitude.std"             
+[73] "body.acceleration.time.jerk.magnitude.std"           
+[74] "body.gyroscope.time.magnitude.std"                   
+[75] "body.gyroscope.time.jerk.magnitude.std"              
+[76] "body.acceleration.frequency.std.x"                   
+[77] "body.acceleration.frequency.std.y"                   
+[78] "body.acceleration.frequency.std.z"                   
+[79] "body.acceleration.frequency.jerk.std.x"              
+[80] "body.acceleration.frequency.jerk.std.y"              
+[81] "body.acceleration.frequency.jerk.std.z"              
+[82] "body.gyroscope.frequency.std.x"                      
+[83] "body.gyroscope.frequency.std.y"                      
+[84] "body.gyroscope.frequency.std.z"                      
+[85] "body.acceleration.frequency.magnitude.std"           
+[86] "body.acceleration.jerk.magnitude.std"                
+[87] "body.gyroscope.magnitude.std"                        
+[88] "body.gyroscope.jerk.magnitude.std"   
 
 
 Summaries
+The data is summarized in groups of subjects and activities.
 
+Subjects
+There were 30 subjects for this study identified with integers from 1 to 30.
+
+Activities
+All 30 subjects were monitored doing the following six activities:
+
+Walking
+Walking Upstairs
+Walking downstairs
+Sitting
+Standing
+Laying
 
 Units
+
+Time, frequency and magnitude measurements were made.
+Time was measured in
+Frequency was measured in
+Magnitude was measured in
+
+End
+
 
